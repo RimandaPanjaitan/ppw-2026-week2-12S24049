@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional mahasiswa Sistem Informasi dengan tema pink cute aesthetic.">
+  <title> Portfolio | [Rimanda Santa Risa Panjaitan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-decor" aria-hidden="true"><span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span><span>✦</span></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="#beranda" class="logo" aria-label="Beranda">[IN]</a>
+      <ul class="nav-list">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+      </ul>
+      <div class="live-status" title="Waktu berjalan secara real-time"><span class="live-dot"></span><span id="liveClock">00:00:00</span></div>
+    </nav>
+  </header>
+
+  <main id="beranda">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow"> Hello, I'm undergraduate Sistem Informasi student's</p>
+        <h1 id="hero-title">Hi, I'm <span>Rimanda Santa Risa Panjaitan</span> ✿</h1>
+        <p class="typing-line"><span id="typingText">Web Explorer</span><span class="cursor">|</span></p>
+        <p class="hero-description">Saya mahasiswa Sistem Informasi yang senang mengeksplorasi web, UI/UX, data, dan berbagai ide digital yang bisa dibuat menjadi sesuatu yang nyata, berguna, dan menyenangkan.</p>
+        <div class="hero-actions">
+          <a href="#portofolio" class="button button-primary">Lihat Portofolio ✦</a>
+          <a href="#layanan" class="button button-secondary">Ajak Kolaborasi ♡</a>
+        </div>
+        <div class="mini-stats" aria-label="Ringkasan profil">
+          <div><strong>Sistem Informasi</strong><span>Program Studi</span></div>
+          <div><strong>Software Engineer</strong><span>Interest</span></div>
+          <div><strong>Data Analyst</strong><span>Interest</span></div>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-labelledby="profile-title">
+        <div class="photo-wrap">
+          <img src="profile.jpg" alt="Foto profil Rimanda Santa Risa Panjaitan" class="profile-photo" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';">
+          <div id="photoFallback" class="photo-fallback" aria-hidden="true">[IN]</div>
+          <span class="status-badge"><span class="status-dot"></span>Available</span>
+        </div>
+        <h2 id="profile-title">Profil Akademik</h2>
+        <dl class="profile-list">
+          <div><dt>Nama</dt><dd>Rimanda Santa Risa Panjaitan</dd></div>
+          <div><dt>NIM</dt><dd>12S24049</dd></div>
+          <div><dt>Program Studi</dt><dd>Sistem Informasi</dd></div>
+          <div><dt>Focus</dt><dd>Programing • Data • UI/UX</dd></div>
+        </dl>
+        <div class="profile-note">☕ Currently learning & building.</div>
+      </aside>
+    </section>
+
+    <section id="tentang" class="content-section" aria-labelledby="tentang-title">
+      <div class="section-heading"><p class="eyebrow">01 — ABOUT ME ♡</p><h2 id="tentang-title">Sedikit tentang saya.</h2><p>Saya percaya bahwa project yang bagus bukan cuma terlihat cantik, tetapi juga mudah dipahami, nyaman digunakan, dan punya tujuan yang jelas.</p></div>
+      <div class="about-grid">
+        <article class="content-card"><div class="card-icon">✿</div><h3>My Focus</h3><p>Mengembangkan kemampuan web, memahami kebutuhan pengguna, dan membuat solusi digital yang sederhana tetapi bermakna.</p></article>
+        <article class="content-card"><div class="card-icon">♡</div><h3>My Skills</h3>
+          <div class="skill-progress"><div class="skill-head"><span>HTML & CSS</span><strong>90%</strong></div><div class="progress-bar"><span style="width:90%"></span></div></div>
+          <div class="skill-progress"><div class="skill-head"><span>UI/UX</span><strong>82%</strong></div><div class="progress-bar"><span style="width:82%"></span></div></div>
+          <div class="skill-progress"><div class="skill-head"><span>Data Analysis</span><strong>78%</strong></div><div class="progress-bar"><span style="width:78%"></span></div></div>
+        </article>
+        <article class="content-card"><div class="card-icon">✦</div><h3>My Goals</h3><ol class="goal-list"><li>Membangun portfolio yang konsisten.</li><li>Mengembangkan skill web dan data.</li><li>Membuat project yang berdampak.</li></ol></article>
+      </div>
+    </section>
+
+    <section id="portofolio" class="content-section" aria-labelledby="portofolio-title">
+      <div class="section-heading"><p class="eyebrow">02 — MY WORK ✦</p><h2 id="portofolio-title">Project yang pernah saya kerjakan.</h2><p>Rekap ini dapat kamu sesuaikan dengan tugas kuliah, project kelompok, maupun project pribadi.</p></div>
+      <div class="project-highlights">
+        <article class="project-card"><span class="project-number">01</span><h3>Web Development</h3><p>Membangun halaman web menggunakan HTML5 dan CSS modern.</p><span class="project-tag">HTML • CSS</span></article>
+        <article class="project-card"><span class="project-number">02</span><h3>UI/UX Project</h3><p>Merancang alur dan antarmuka berdasarkan kebutuhan pengguna.</p><span class="project-tag">Figma • UX</span></article>
+        <article class="project-card"><span class="project-number">03</span><h3>Data Project</h3><p>Mengolah data untuk menemukan informasi dan insight yang relevan.</p><span class="project-tag">Data • Analysis</span></article>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <caption>Rekapitulasi Capaian Akademik dan Proyek</caption>
+          <thead><tr><th scope="col">No.</th><th scope="col">Mata Kuliah / Proyek</th><th scope="col">Tahun</th><th scope="col">Status</th><th scope="col">Deskripsi</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1</th><td>Pemrograman Berorientasi Objek</td><td>2026</td><td><span class="badge progress">Berjalan</span></td><td>Membangun aplikasi menggunakan konsep OOP dan persistence.</td></tr>
+            <tr><th scope="row">2</th><td>Pemrograman & Pengujian Aplikasi Web</td><td>2026</td><td><span class="badge progress">Berjalan</span></td><td>Merancang halaman web modern dengan HTML5 dan CSS.</td></tr>
+            <tr><th scope="row">3</th><td>Proyek UI/UX</td><td>2026</td><td><span class="badge done">Selesai</span></td><td>Membuat user flow dan desain antarmuka berbasis kebutuhan pengguna.</td></tr>
+            <tr><th scope="row">4</th><td>Analisis Data</td><td>2026</td><td><span class="badge planned">Rencana</span></td><td>Eksplorasi data untuk mendapatkan insight yang mendukung keputusan.</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="5">♡ Total contoh riwayat/proyek: 4 item.</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section id="layanan" class="content-section" aria-labelledby="layanan-title">
+      <div class="section-heading"><p class="eyebrow">03 — LET'S CONNECT ♡</p><h2 id="layanan-title">Punya ide? Ceritakan ke saya.</h2><p>Formulir ini dapat digunakan untuk simulasi layanan konsultasi, kontak resmi, maupun diskusi project.</p></div>
+      <form class="contact-form" action="#" method="post">
+        <fieldset><legend>♡ Data Identitas</legend>
+          <div class="form-grid">
+            <div class="form-group"><label for="nama">Nama Lengkap <span class="required">*</span></label><input type="text" id="nama" name="nama" placeholder="Nama kamu" autocomplete="name" required></div>
+            <div class="form-group"><label for="email">Email <span class="required">*</span></label><input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="email-help" required><small id="email-help" class="help-text">Gunakan email yang masih aktif.</small></div>
+            <div class="form-group"><label for="telepon">Nomor Telepon <span class="required">*</span></label><input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" autocomplete="tel" pattern="[0-9]{10,15}" aria-describedby="telepon-help" required><small id="telepon-help" class="help-text">Masukkan 10–15 digit.</small></div>
+            <div class="form-group"><label for="jumlah">Jumlah Pertemuan <span class="required">*</span></label><input type="number" id="jumlah" name="jumlah" min="1" max="10" value="1" required></div>
+          </div>
+        </fieldset>
+        <fieldset><legend>✦ Detail Permintaan</legend>
+          <div class="form-group"><label for="kategori">Kategori Layanan <span class="required">*</span></label><select id="kategori" name="kategori" required><option value="" selected disabled>Pilih kategori</option><option value="web">Pengembangan Web</option><option value="uiux">UI/UX</option><option value="data">Analisis Data</option><option value="lainnya">Lainnya</option></select></div>
+          <div class="form-group"><span class="form-label">Metode Konsultasi <span class="required">*</span></span><div class="option-list"><label class="option-item"><input type="radio" name="metode" value="online" required><span>Online</span></label><label class="option-item"><input type="radio" name="metode" value="offline"><span>Offline</span></label></div></div>
+          <div class="form-group"><span class="form-label">Layanan Tambahan</span><div class="option-list"><label class="option-item"><input type="checkbox" name="tambahan[]" value="review"><span>Review tampilan</span></label><label class="option-item"><input type="checkbox" name="tambahan[]" value="dokumentasi"><span>Bantuan dokumentasi</span></label><label class="option-item"><input type="checkbox" name="tambahan[]" value="presentasi"><span>Persiapan presentasi</span></label></div></div>
+          <div class="form-group"><label for="pesan">Deskripsi Pertanyaan / Permintaan <span class="required">*</span></label><textarea id="pesan" name="pesan" rows="6" placeholder="Ceritakan ide atau kebutuhan project kamu..." required></textarea></div>
+        </fieldset>
+        <div class="form-submit"><button type="submit" class="button button-primary">Kirim Pesan ♡</button><p class="privacy-note">Form ini digunakan sebagai simulasi interaksi pada tugas praktikum.</p></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong> Rimanda Santa Risa Panjaitan</strong><p>Mahasiswa Sistem Informasi • Institut Teknologi Del</p></div>
+    <div class="footer-right"><span id="liveDate">Loading date...</span><p>Made by Rimanda Santa for PPW Week 2.</p></div>
+  </footer>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('liveClock').textContent = now.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+      document.getElementById('liveDate').textContent = now.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+    }
+    updateClock(); setInterval(updateClock, 1000);
+
+    const words = ['Web Explorer','UI/UX Learner','Data Enthusiast','Creative Problem Solver'];
+    const typingText = document.getElementById('typingText');
+    let wordIndex=0, charIndex=0, deleting=false;
+    function typingEffect(){
+      const current=words[wordIndex];
+      if(!deleting){typingText.textContent=current.substring(0,charIndex+1);charIndex++;if(charIndex===current.length){deleting=true;setTimeout(typingEffect,1200);return;}}
+      else{typingText.textContent=current.substring(0,charIndex-1);charIndex--;if(charIndex===0){deleting=false;wordIndex=(wordIndex+1)%words.length;}}
+      setTimeout(typingEffect,deleting?55:95);
+    }
+    typingEffect();
+  </script>
+</body>
+</html>
