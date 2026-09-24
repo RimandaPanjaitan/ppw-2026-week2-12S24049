@@ -1,121 +1,68 @@
 # ppw-2026-week2-12S24049
-Setiap mahasiswa diwajibkan membangun sebuah halaman web portofolio profil profesional tunggal (Single Page Showcase Webpage) yang menyajikan identitas akademik, tabel rekapitulasi capaian/proyek, galeri keahlian terstruktur, serta formulir pemesanan layanan konsultasi/kontak resmi yang sepenuhnya estetik, rapi, responsif, dan accessible.
+# ✿ Portofolio Web Modern & Responsive — Week 3 (Bootstrap 5 Integration)
 
-1. Struktur Semantik HTML5 (Bobot 20%): Wajib menggunakan tag (logo & navigasi), <nav> ,
-<main> , minimal 3 buah <section> (Tentang Saya, Portofolio Karya, Formulir Layanan), <aside> , dan
-<footer> . Hindari pembungkus <div> tanpa makna.
-2. Penyajian Data Tabular & Lists (Bobot 15%): Wajib memuat satu tabel data semantik lengkap ( ,
-, , , , dan atribut scope="col/row" ) yang menyajikan daftar riwayat
-matakuliah/proyek, serta minimal dua jenis HTML Lists ( <ul> dan <ol> ).
-3. Komponen Formulir Interaktif & Accessible (Bobot 20%): Formulir dikelompokkan dengan minimal 2
-blok dan . Memuat minimal 6 tipe kontrol input (text, email, tel, number, radio,
-checkbox, select, textarea). Seluruh input wajib memiliki pasangan eksplisit dan atribut
-validasi native ( ).
-4. Estetika & Tata Letak CSS Modern (Bobot 25%): Wajib menggunakan CSS eksternal ( ) dengan
-Universal Box Sizing Reset. Menerapkan palet warna terencana (aturan 60-30-10), tipografi modern, sudut
-membulat ( ), bayangan lembut( box-shadow ), tata letak berbasis CSS Flexbox atau CSS Grid,
-serta responsif di berbagai resolusi layar via Media Queries ( @media (max-width: 768px) ).
-5. Pengelolaan Git & GitHub Pages Deployment (Bobot 20%): Kode dikelola menggunakan repositori
-publik GitHub bernama
-dipublikasikan secara live di GitHub Pages.
+Selamat datang di repositori proyek web portofolio profesional milik **Rimanda Santa Risa Panjaitan**. Repositori ini berisi hasil pembaruan (*refactoring*) dari proyek Week 2 dengan mengintegrasikan *framework* **Bootstrap 5.3**, **Bootstrap Icons**, serta *Custom CSS Variables* untuk menciptakan antarmuka web yang estetik, responsif, interaktif, dan *accessible*.
 
+---
 
-# PPW Week 2 — Pink Cute Portfolio
+## 📌 Informasi Mahasiswa & Matakuliah
 
-Website tugas mandiri Praktikum Minggu 02 untuk mata kuliah Pemrograman dan Pengujian Aplikasi Web.
+* **Nama**: Rimanda Santa Risa Panjaitan
+* **NIM**: 12S24049
+* **Program Studi**: S1 Sistem Informasi
+* **Mata Kuliah**: Pemrograman & Pengujian Aplikasi Web (PPW)
+* **Instansi**: Institut Teknologi Del
+* **Tugas**: Praktikum Minggu 03 — CSS Framework (Bootstrap 5) & Advanced UI Interactions
 
-## Tema
+---
 
-**Rimanda Santa Risa Panjaitan Portfolio**: soft, aesthetic, modern, dan tetap rapi serta accessible.
+## 🚀 Fitur Utama & Spesifikasi Teknis
 
-## Struktur
+1. **Responsive Bootstrap Navbar (`sticky-top`)**:
+   * Dilengkapi dengan tombol *hamburger toggler* yang otomatis melipat di layar *mobile* (*breakpoint* `lg`).
+   * Menampilkan fitur jam digital *real-time* dan indikator status *live*.
 
-```text
-ppw-2026-week2-[NIM]/
-├── index.html
-├── style.css
-├── README.md
-└── profile.jpg
-```
+2. **Hero Section & Typing Effect**:
+   * Tampilan perkenalan interaktif dengan animasi teks mengetik (*typewriter effect*) berbasis JavaScript native.
+   * Disertai kartu statistik ringkas (*mini stats*) dan *profile badge*.
 
-`profile.jpg` adalah foto pribadi. Simpan foto kamu dengan nama tersebut di folder yang sama dengan `index.html`.
+3. **Responsive Portfolio Grid System**:
+   * Menggunakan **Bootstrap 12-Column Grid** (`row-cols-1 row-cols-md-2 row-cols-lg-3`) yang otomatis menyesuaikan jumlah kolom berdasarkan ukuran layar HP, tablet, maupun desktop.
+   * Terdiri dari 4 kartu proyek (*Web Development, UI/UX, Data Project,* dan *Object-Oriented Programming*).
 
-## Fitur Tambahan
+4. **Modal Dialogs (Pop-up Detail Proyek)**:
+   * Mengintegrasikan komponen **Bootstrap Modal Dialog** yang dapat dipicu melalui tombol *"Detail Proyek ✦"*.
+   * Menampilkan rincian deskripsi proyek dan daftar *tech stack* tanpa perlu berpindah halaman (*Single Page Showcase*).
 
-- Live clock yang berubah setiap detik
-- Live date pada footer
-- Typing effect dengan beberapa role
-- Background dekorasi hearts/sparkles bergerak
-- Status Available dengan indikator animasi
-- Skill progress bars
-- Project highlight cards
-- Smooth scrolling
-- Responsive mobile layout
-- Focus state untuk keyboard accessibility
-- Fallback inisial jika foto belum ada
+5. **Aksesibilitas & Data Tabular Semantik**:
+   * Menyajikan rekapitulasi riwayat akademik menggunakan tabel semantik HTML5 (`caption`, `thead`, `tbody`, `tfoot`, dan `scope`).
+   * Menampilkan *progress bar* persentase keahlian dan *ordered list* target capaian.
 
-## Requirement Praktikum
+6. **Formulir Konsultasi Interaktif**:
+   * Dikelompokkan rapi menggunakan elemen `<fieldset>` dan `<legend>`.
+   * Memuat minimal 6 tipe kontrol input (`text`, `email`, `tel`, `number`, `select`, `radio`, `checkbox`, `textarea`) lengkap dengan atribut validasi native HTML5 dan pasangan label eksplisit.
 
-### Semantic HTML5
+7. **Custom CSS Overrides & Variables**:
+   * Menimpa (*override*) gaya *default* Bootstrap menggunakan variabel CSS `:root` pada `style.css` tanpa menggunakan `!important`.
+   * Mengusung tema visual *Pink Cute Aesthetic* dengan gradien lembut, bayangan halus (*soft drop shadow*), dan sudut membulat (*border-radius*).
 
-Menggunakan `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, dan `<footer>`. Terdapat tiga section utama: Tentang Saya, Portofolio Karya, dan Formulir Layanan.
+---
 
-### Table & Lists
+## 🛠️ Teknologi & Pustaka yang Digunakan
 
-Tabel menggunakan `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `scope="col"`, dan `scope="row"`. Tersedia `<ul>` dan `<ol>`.
+* **HTML5**: Semantik dokumen (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`).
+* **CSS3**: Custom Flexbox, CSS Grid, Media Queries, dan CSS Variables.
+* **Bootstrap 5.3.3**: Framework CSS untuk Navbar, Grid System, Cards, Badges, dan Modals.
+* **Bootstrap Icons 1.11.3**: Pustaka ikon vektor.
+* **JavaScript (ES6)**: Logika *live clock* jam/tanggal serta animasi *typing effect*.
 
-### Form Accessible
+---
 
-Form menggunakan dua `<fieldset>` dan `<legend>` serta input text, email, tel, number, radio, checkbox, select, textarea. Validasi menggunakan `required`, `min`, `max`, `pattern`, dan `aria-describedby`.
-
-### CSS
-
-External CSS dengan universal box sizing reset, palet pink, typography modern, `border-radius`, `box-shadow`, Flexbox, CSS Grid, hover transition, focus state, dan `@media (max-width: 768px)`.
-
-## Menambahkan Foto
-
-1. Pilih foto kamu.
-2. Ubah nama menjadi `profile.jpg`.
-3. Taruh dalam folder project yang sama dengan `index.html`.
-4. Refresh Live Server.
-
-## Menjalankan
-
-Buka folder di VS Code, lalu klik kanan `index.html` → **Open with Live Server**.
-
-## GitHub
-
-Repository wajib public dan gunakan nama:
+## 📂 Struktur Berkas Repositori
 
 ```text
-ppw-2026-week2-[NIM]
-```
-
-Perintah:
-
-```bash
-git init
-git add .
-git commit -m "feat: complete week 2 pink portfolio"
-git branch -M main
-git remote add origin https://github.com/Rimanda Santa Risa Panjaitan/ppw-2026-week2-12S24049.git
-git push -u origin main
-```
-
-## GitHub Pages
-
-Masuk **Settings → Pages → Branch: main → Save**.
-
-Live URL:
-
-```text
-https://RimandaPanjaitan.github.io/ppw-2026-week2-12S24049/
-```
-
-## Sebelum Submit
-
-Ganti `[Nama Lengkap]`, `[NIM]`, `[IN]`, data proyek, dan masukkan `profile.jpg`.
-
-## Author
-
-Rimanda Santa Risa Panjaitan — Sistem Informasi, Institut Teknologi Del
+PPW-2026-Week2-12S24049/
+├── index.html       # Berkas utama dokumen HTML5
+├── style.css        # Berkas CSS eksternal (Custom Overrides & Variables)
+├── profile.jpg      # Foto profil mahasiswa
+└── README.md        # Dokumentasi resmi proyek
