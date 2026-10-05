@@ -1,0 +1,20 @@
+[
+  {
+    "id": "srv-web",
+    "name": "Pengembangan Web",
+    "price": "Konsultasi Free",
+    "description": "Layanan perancangan dan pembuatan halaman web responsif modern."
+  },
+  {
+    "id": "srv-uiux",
+    "name": "Desain UI/UX",
+    "price": "Konsultasi Free",
+    "description": "Perancangan antarmuka aplikasi dan alur pengguna yang intuitif."
+  },
+  {
+    "id": "srv-data",
+    "name": "Analisis Data",
+    "price": "Konsultasi Free",
+    "description": "Pengolahan data dan penyajian laporan analisis informasi."
+  }
+]

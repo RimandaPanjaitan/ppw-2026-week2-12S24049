@@ -1,0 +1,42 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Web Development",
+    "category": "web",
+    "tags": ["HTML5", "CSS3", "Bootstrap 5"],
+    "thumbnail": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&auto=format&fit=crop",
+    "shortDescription": "Membangun halaman web responsif menggunakan HTML5 dan CSS modern.",
+    "fullDescription": "Proyek pengembangan halaman web portofolio interaktif berbasis arsitektur decoupled. Mengimplementasikan sistem grid responsif, penanganan UI states, dan desain modern berbasis Bootstrap 5.",
+    "metrics": "100% Responsive • Accessible"
+  },
+  {
+    "id": "proj-2",
+    "title": "UI/UX Project",
+    "category": "uiux",
+    "tags": ["Figma", "User Flow", "Wireframe"],
+    "thumbnail": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=500&auto=format&fit=crop",
+    "shortDescription": "Merancang alur dan antarmuka berdasarkan kebutuhan pengguna.",
+    "fullDescription": "Merancang pengalaman pengguna (UX) dan antarmuka visual (UI) untuk aplikasi seluler. Proyek ini mencakup riset pengguna, pemetaan user flow, hingga pengujian prototipe interaktif.",
+    "metrics": "High Fidelity Prototype"
+  },
+  {
+    "id": "proj-3",
+    "title": "Data Project",
+    "category": "data",
+    "tags": ["Python", "Data Analysis", "SQL"],
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop",
+    "shortDescription": "Mengolah data untuk menemukan informasi dan insight yang relevan.",
+    "fullDescription": "Analisis eksplorasi data (EDA) menggunakan pustaka data modern. Membantu identifikasi tren data dan menghasilkan visualisasi informasi untuk pengambilan keputusan.",
+    "metrics": "Data Insights • Visual Analytics"
+  },
+  {
+    "id": "proj-4",
+    "title": "Object-Oriented Programming",
+    "category": "web",
+    "tags": ["Java", "OOP", "Database"],
+    "thumbnail": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop",
+    "shortDescription": "Membangun aplikasi menggunakan konsep OOP dan persistence.",
+    "fullDescription": "Pengembangan perangkat lunak berbasis pemrograman berorientasi objek (OOP) dengan struktur kode yang bersih, menerapkan pola enkapsulasi, pewarisan, dan persistensi data.",
+    "metrics": "Clean Code Architecture"
+  }
+]
