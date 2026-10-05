@@ -1,4 +1,4 @@
-# ppw-2026-week4-12S24049
+# ppw-2026-week2-12S24049
 Setiap mahasiswa diwajibkan membangun sebuah halaman web portofolio profil profesional tunggal (Single Page Showcase Webpage) yang menyajikan identitas akademik, tabel rekapitulasi capaian/proyek, galeri keahlian terstruktur, serta formulir pemesanan layanan konsultasi/kontak resmi yang sepenuhnya estetik, rapi, responsif, dan accessible.
 
 1. Struktur Semantik HTML5 (Bobot 20%): Wajib menggunakan tag (logo & navigasi), <nav> ,
@@ -20,9 +20,9 @@ publik GitHub bernama
 dipublikasikan secara live di GitHub Pages.
 
 
-# PPW Week 4 —  Portfolio
+# PPW Week 2 —  Portfolio
 
-Website tugas mandiri Praktikum Minggu 04 untuk mata kuliah Pemrograman dan Pengujian Aplikasi Web.
+Website tugas mandiri Praktikum Minggu 02 untuk mata kuliah Pemrograman dan Pengujian Aplikasi Web.
 
 ## Tema
 
@@ -36,13 +36,6 @@ ppw-2026-week2-[NIM]/
 ├── style.css
 ├── README.md
 └── profile.jpg
-└── data
-  └── profile.json
-  └── project.json
-  └── services.json
-└── js
-  └── api - services.js
-  └── app.js
 ```
 
 `profile.jpg` adalah foto pribadi. 
