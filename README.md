@@ -1,4 +1,4 @@
-# ppw-2026-week2-12S24049
+# ppw-2026-week4-12S24049
 Setiap mahasiswa diwajibkan membangun sebuah halaman web portofolio profil profesional tunggal (Single Page Showcase Webpage) yang menyajikan identitas akademik, tabel rekapitulasi capaian/proyek, galeri keahlian terstruktur, serta formulir pemesanan layanan konsultasi/kontak resmi yang sepenuhnya estetik, rapi, responsif, dan accessible.
 
 1. Struktur Semantik HTML5 (Bobot 20%): Wajib menggunakan tag (logo & navigasi), <nav> ,
@@ -20,102 +20,12 @@ publik GitHub bernama
 dipublikasikan secara live di GitHub Pages.
 
 
-# PPW Week 2 — Pink Cute Portfolio
+# PPW Week 4 —  Portfolio
 
 Website tugas mandiri Praktikum Minggu 02 untuk mata kuliah Pemrograman dan Pengujian Aplikasi Web.
 
 ## Tema
 
-**Rimanda Santa Risa Panjaitan Portfolio**: soft, aesthetic, modern, dan tetap rapi serta accessible.
+Praktikum Minggu 04 Mata Kuliah Pemrograman dan Pengujian Web (12S3101) yang diampu oleh Bapak Chandro Pardede, S.Kom., M.Sc. di Institut Teknologi Del berfokus pada transformasi arsitektural dari portofolio statis monolitik milik Rimanda Santa Risa Panjaitan (NIM 12S24049) menjadi aplikasi web modern berarsitektur Decoupled Multi-Tier dan Dynamic Client-Side Rendering (CSR). Proyek ini memisahkan tanggung jawab sistem (Separation of Concerns) secara tegas, di mana berkas index.html hanya berfungsi sebagai kerangka tampilan visual (Presentation Tier), logika pengontrol dikelola oleh modul JavaScript ES6+ (app.js dan api-service.js), serta seluruh data portofolio, katalog layanan, dan profil akademik disimpan terpisah pada berkas data JSON (projects.json, services.json, dan profile.json) di dalam direktori /data/. Pemodelan arsitektur terdistribusi ini disajikan secara komprehensif melalui C4 Container Model Diagram berbasis Mermaid.js.   Dalam implementasinya, berkas index.html kini telah bersih dari elemen kartu proyek yang ditulis secara manual (hardcoded) dan digantikan oleh mekanisme pemuatan data asinkron berbasis async/await Fetch API. Pengelolaan antarmuka pengguna menangani empat UI States secara responsif, yaitu Loading State berbentuk animasi spinner, Success Render State, Empty State, serta Error Alert Fallback. Rincian proyek juga kini disajikan melalui satu elemen Universal Dynamic Modal tunggal yang diinjeksi secara dinamis berdasarkan ID proyek tanpa duplikasi tag HTML, disertai penerapan sanitasi teks masukan (escapeHTML) guna mencegah kerentanan keamanan DOM-based Cross-Site Scripting (XSS). 
 
-## Struktur
-
-```text
-ppw-2026-week2-[NIM]/
-├── index.html
-├── style.css
-├── README.md
-└── profile.jpg
-```
-
-`profile.jpg` adalah foto pribadi. Simpan foto kamu dengan nama tersebut di folder yang sama dengan `index.html`.
-
-## Fitur Tambahan
-
-- Live clock yang berubah setiap detik
-- Live date pada footer
-- Typing effect dengan beberapa role
-- Background dekorasi hearts/sparkles bergerak
-- Status Available dengan indikator animasi
-- Skill progress bars
-- Project highlight cards
-- Smooth scrolling
-- Responsive mobile layout
-- Focus state untuk keyboard accessibility
-- Fallback inisial jika foto belum ada
-
-## Requirement Praktikum
-
-### Semantic HTML5
-
-Menggunakan `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, dan `<footer>`. Terdapat tiga section utama: Tentang Saya, Portofolio Karya, dan Formulir Layanan.
-
-### Table & Lists
-
-Tabel menggunakan `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `scope="col"`, dan `scope="row"`. Tersedia `<ul>` dan `<ol>`.
-
-### Form Accessible
-
-Form menggunakan dua `<fieldset>` dan `<legend>` serta input text, email, tel, number, radio, checkbox, select, textarea. Validasi menggunakan `required`, `min`, `max`, `pattern`, dan `aria-describedby`.
-
-### CSS
-
-External CSS dengan universal box sizing reset, palet pink, typography modern, `border-radius`, `box-shadow`, Flexbox, CSS Grid, hover transition, focus state, dan `@media (max-width: 768px)`.
-
-## Menambahkan Foto
-
-1. Pilih foto kamu.
-2. Ubah nama menjadi `profile.jpg`.
-3. Taruh dalam folder project yang sama dengan `index.html`.
-4. Refresh Live Server.
-
-## Menjalankan
-
-Buka folder di VS Code, lalu klik kanan `index.html` → **Open with Live Server**.
-
-## GitHub
-
-Repository wajib public dan gunakan nama:
-
-```text
-ppw-2026-week2-[NIM]
-```
-
-Perintah:
-
-```bash
-git init
-git add .
-git commit -m "feat: complete week 2 pink portfolio"
-git branch -M main
-git remote add origin https://github.com/Rimanda Santa Risa Panjaitan/ppw-2026-week2-12S24049.git
-git push -u origin main
-```
-
-## GitHub Pages
-
-Masuk **Settings → Pages → Branch: main → Save**.
-
-Live URL:
-
-```text
-https://RimandaPanjaitan.github.io/ppw-2026-week2-12S24049/
-```
-
-## Sebelum Submit
-
-Ganti `[Nama Lengkap]`, `[NIM]`, `[IN]`, data proyek, dan masukkan `profile.jpg`.
-
-## Author
-
-Rimanda Santa Risa Panjaitan — Sistem Informasi, Institut Teknologi Del
+Selain itu, formulir pemesanan layanan telah direfaktor menjadi mekanisme pengiriman REST asinkron tanpa memicu pemuatan ulang halaman (full page reload), dengan data pesanan yang tersimpan secara persisten di localStorage browser pengguna.   Sebagai bagian dari evaluasi kinerja web berdasarkan standar HTTP RFC 9111, pengujian Network Profiling telah dilakukan melalui tab Network Browser DevTools. Pengujian ini membandingkan kinerja pemuatan pertama (Cold Load) dengan pemuatan berulang (Warm Load), yang membuktikan efisiensi penggunaan HTTP Caching (status 304 Not Modified / disk cache) serta penghematan bandwidth hingga lebih dari 95%. Pemuatan aset yang disajikan melalui CDN Edge GitHub Pages ini juga menghasilkan Time to First Byte (TTFB) di bawah 15 ms dan First Contentful Paint (FCP) sekitar 80 ms pada kondisi warm load, sehingga memberikan pengalaman pengguna (user experience) yang sangat mulus, responsif, dan reaktif. Seluruh hasil pengerjaan proyek beserta dokumentasi lengkap ini dipublikasikan secara live melalui branch week4-architecture pada platform GitHub Pages
